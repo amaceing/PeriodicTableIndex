@@ -232,7 +232,6 @@ public class program3 {
           System.out.println();
           decNumStart += decNum;
       }
-      fillDecadeArray(periodicTable, recs);
       System.out.println();
    }
 
