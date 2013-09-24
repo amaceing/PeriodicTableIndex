@@ -83,6 +83,7 @@ public class program3 {
             periodicTable[elems].elementMass = fromFile.nextDouble();
             elems++;
          } while (!(periodicTable[elems - 1].elementName.equals("EOF")));
+         elems--;
       } catch (IOException ioe) {
          System.out.println("File access error!");
          elems = 0;

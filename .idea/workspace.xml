@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fd43712-6f7c-4c76-8e7c-90567c010c58" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/program3.java" afterPath="$PROJECT_DIR$/src/program3.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/FibTest.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1379232224926" ignored="false" />
-    <file path="/program3.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1379634982182" ignored="false" />
+    <file path="/program3.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1380054067548" ignored="false" />
     <file path="/tryThis.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1379233815083" ignored="false" />
     <file path="/periodictable.txt" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1379302322690" ignored="false" />
     <file path="$PROJECT_DIR$/../Homework4/src/Homework4.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1379635100930" ignored="false" />
     <file path="/Homework4.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1379635040255" ignored="false" />
-    <file path="/Dummy.txt" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1380051033627" ignored="false" />
+    <file path="/Dummy.txt" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1380053974460" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +94,7 @@
       <file leaf-file-name="program3.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/program3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="55" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.40279937">
+            <state line="85" column="17" selection-start="3378" selection-end="3378" vertical-scroll-proportion="0.40279937">
               <folding>
                 <element signature="e#0#11020#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -133,8 +134,8 @@
         <option value="$PROJECT_DIR$/src/Homework1.java" />
         <option value="$PROJECT_DIR$/src/tryThis.java" />
         <option value="$PROJECT_DIR$/periodictable.txt" />
-        <option value="$PROJECT_DIR$/src/program3.java" />
         <option value="$PROJECT_DIR$/data3.txt" />
+        <option value="$PROJECT_DIR$/src/program3.java" />
       </list>
     </option>
   </component>
@@ -470,7 +471,11 @@
       <created>1380051041281</created>
       <updated>1380051041281</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="deleted line 'elems--;' for testing">
+      <created>1380053981859</created>
+      <updated>1380053981859</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -495,9 +500,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2867804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2867804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -561,7 +566,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="moving data file/testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted line 'elems--;' for testing" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -579,6 +584,7 @@
     <MESSAGE value="deleted unnecessary line" />
     <MESSAGE value="changed data file name" />
     <MESSAGE value="moving data file/testing" />
+    <MESSAGE value="deleted line 'elems--;' for testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -687,7 +693,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/program3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="55" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.40279937">
+        <state line="85" column="17" selection-start="3378" selection-end="3378" vertical-scroll-proportion="0.40279937">
           <folding>
             <element signature="e#0#11020#0" expanded="true" />
             <element signature="imports" expanded="true" />
