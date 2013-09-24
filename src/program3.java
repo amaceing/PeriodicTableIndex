@@ -74,7 +74,7 @@ public class program3 {
    public static int createArray(Elements[] periodicTable) {
       int elems = 0;
       try {
-         Scanner fromFile = new Scanner(new File("periodictable.txt"));
+         Scanner fromFile = new Scanner(new File("data3.txt"));
          do {
             periodicTable[elems] = new Elements();
             periodicTable[elems].elementName = fromFile.next();
