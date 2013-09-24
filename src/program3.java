@@ -50,11 +50,11 @@ public class program3 {
    public static int menu() {
       System.out.println("Choose a task number from the following:");
       System.out.println("       1 - Display entire data file");
-      System.out.println("       2 - Display specific record in the file");
-      System.out.println("       3 - Display cumulative value from select " +
-                                 "records in data file");
+      System.out.println("       2 - Display specific element in the file");
+      System.out.println("       3 - Display cumulative average molecular weight " +
+                                 "from select records in data file");
       System.out.println("       4 - View a chart that displays number of " +
-                                 "times data in a selected\n" + 
+                                 "times data in a \n" +
                                  "           field occurs in each of ten ranges");
       System.out.println("       5 - Quit the program");
       System.out.print("Which would you like to perform: ");
@@ -218,7 +218,9 @@ public class program3 {
                         " %4.3f \n", avg);
       System.out.println();
    }
-   
+
+   //Displays histogram of records from data file in
+   //ten ranges
    public static void displayHistogram(Elements[] periodicTable, int recs) {
       String dec = "decade";
       String count = "count";
@@ -235,6 +237,8 @@ public class program3 {
       System.out.println();
    }
 
+   //Fills the array that will hold the decade counts
+   //for each decade
    public static int[] fillDecadeArray(Elements[] periodicTable, int recs) {
       double min = computeMin(periodicTable, recs);
       int decWidth = decadeWidth(periodicTable, recs);
@@ -247,7 +251,7 @@ public class program3 {
       return decadeArray;
    }
 
-
+   //Computes decade width
    public static int decadeWidth (Elements[] periodicTable, int recs) {
       double min = computeMin(periodicTable, recs)   ;
       double max = computeMax(periodicTable, recs);
@@ -256,6 +260,7 @@ public class program3 {
       return decadeWid;
    }
 
+   //Computes minimum from data file
    public static double computeMin(Elements[] periodicTable, int recs) {
       double lowest = periodicTable[0].elementMass;
       for (int i = 0; i < recs; i ++) {
@@ -266,6 +271,7 @@ public class program3 {
       return lowest;
    }
 
+   //Computes maximum from data file
    public static double computeMax(Elements[] periodicTable, int recs) {
       double highest = periodicTable[0].elementMass;
       for (int i = 0; i < recs; i ++) {
@@ -275,12 +281,16 @@ public class program3 {
       }
       return highest;
    }
-   
+
+   //Displays a quit program message if the user chooses
+   //menu option 5
    public static void quitProg() {
       System.out.println("You have quit the program.");
       System.out.println();
    }
 
+   //Prints the correct amount of stars associated
+   //with decade count
    public static void printStars (int numStars) {
       for (int i = 0; i < numStars; i++) {
           System.out.print("*");
@@ -288,6 +298,8 @@ public class program3 {
    }
 }
 
+//Class that holds instance variables for each
+//record in data file
 class Elements {
    public String elementName;
    public String elementSym;
