@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fd43712-6f7c-4c76-8e7c-90567c010c58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/program3.java" afterPath="$PROJECT_DIR$/src/program3.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
@@ -13,7 +12,7 @@
     <file path="/periodictable.txt" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1379302322690" ignored="false" />
     <file path="$PROJECT_DIR$/../Homework4/src/Homework4.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1379635100930" ignored="false" />
     <file path="/Homework4.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1379635040255" ignored="false" />
-    <file path="/Dummy.txt" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1380054080042" ignored="false" />
+    <file path="/Dummy.txt" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1380055030454" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -463,7 +462,11 @@
       <created>1380054085170</created>
       <updated>1380054085170</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added comments above every method">
+      <created>1380055035838</created>
+      <updated>1380055035838</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -554,7 +557,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added 'elems--;' back" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comments above every method" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -574,6 +577,7 @@
     <MESSAGE value="moving data file/testing" />
     <MESSAGE value="deleted line 'elems--;' for testing" />
     <MESSAGE value="added 'elems--;' back" />
+    <MESSAGE value="added comments above every method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
