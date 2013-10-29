@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fd43712-6f7c-4c76-8e7c-90567c010c58" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/program3.java" afterPath="$PROJECT_DIR$/src/program3.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/FibTest.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1379232224926" ignored="false" />
-    <file path="/program3.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1380054874653" ignored="false" />
+    <file path="/program3.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1383089432297" ignored="false" />
     <file path="/tryThis.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1379233815083" ignored="false" />
     <file path="/periodictable.txt" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1379302322690" ignored="false" />
     <file path="$PROJECT_DIR$/../Homework4/src/Homework4.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1379635100930" ignored="false" />
     <file path="/Homework4.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1379635040255" ignored="false" />
-    <file path="/Dummy.txt" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1381298889980" ignored="false" />
+    <file path="/Dummy.txt" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1383088847206" ignored="false" />
     <file path="$PROJECT_DIR$/../untitled/src/test.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1380078150692" ignored="false" />
     <file path="/test.java" changelist="0fd43712-6f7c-4c76-8e7c-90567c010c58" time="1380078147132" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,7 +80,7 @@
       <file leaf-file-name="program3.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/program3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="301" column="21" selection-start="11354" selection-end="11354" vertical-scroll-proportion="8.782158">
+            <state line="95" column="7" selection-start="3654" selection-end="3654" vertical-scroll-proportion="0.40106952">
               <folding />
             </state>
           </provider>
@@ -117,16 +118,16 @@
         <option value="$PROJECT_DIR$/src/Homework1.java" />
         <option value="$PROJECT_DIR$/src/tryThis.java" />
         <option value="$PROJECT_DIR$/periodictable.txt" />
-        <option value="$PROJECT_DIR$/src/program3.java" />
         <option value="$PROJECT_DIR$/data3.txt" />
+        <option value="$PROJECT_DIR$/src/program3.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1874" />
-    <option name="height" value="1096" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -508,10 +509,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6385928" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7057823" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -524,8 +525,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12362031" sideWeight="0.5415778" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45842218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.122727275" sideWeight="0.36348122" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6365188" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -712,7 +713,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/program3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="301" column="21" selection-start="11354" selection-end="11354" vertical-scroll-proportion="8.782158">
+        <state line="95" column="7" selection-start="3654" selection-end="3654" vertical-scroll-proportion="0.40106952">
           <folding />
         </state>
       </provider>

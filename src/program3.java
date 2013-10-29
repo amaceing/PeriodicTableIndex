@@ -73,17 +73,23 @@ public class program3 {
    //ONLY the count of the records
    public static int createArray(Elements[] periodicTable) {
       int elems = 0;
+      String test = "";
+      boolean endOfFile = false;
       try {
          Scanner fromFile = new Scanner(new File("data3.txt"));
          do {
-            periodicTable[elems] = new Elements();
-            periodicTable[elems].elementName = fromFile.next();
-            periodicTable[elems].elementSym = fromFile.next();
-            periodicTable[elems].elementNum = fromFile.nextInt();
-            periodicTable[elems].elementMass = fromFile.nextDouble();
-            elems++;
-         } while (!(periodicTable[elems - 1].elementName.equals("EOF")));
-         elems--;
+            test = fromFile.next();
+            if (test.equals("EOF")) {
+                endOfFile = true;
+            } else {
+                periodicTable[elems] = new Elements();
+                periodicTable[elems].elementName = test;
+                periodicTable[elems].elementSym = fromFile.next();
+                periodicTable[elems].elementNum = fromFile.nextInt();
+                periodicTable[elems].elementMass = fromFile.nextDouble();
+                elems++;
+            }
+         } while (!endOfFile);
       } catch (IOException ioe) {
          System.out.println("File access error!");
          elems = 0;
