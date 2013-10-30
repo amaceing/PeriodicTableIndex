@@ -16,22 +16,22 @@ public class program3 {
    //for the program to run. It will also declare
    //Scanner/File objects.
    public static void main(String[] args) {
-      int b = 0;
+      int option = 0;
       printIntro();
       Elements[] periodicTable = new Elements[240];
       int recs = createArray(periodicTable);
       do {
-          b = menu();
-          if (b == 1) {
+          option = menu();
+          if (option == 1) {
               displayFile(periodicTable, recs);
-          } else if (b == 2) {
+          } else if (option == 2) {
               displaySelectRecord(periodicTable, recs);
-          } else if (b == 3) {
+          } else if (option == 3) {
               displayCumResult(periodicTable, recs);
-          } else if (b == 4) {
+          } else if (option == 4) {
               displayHistogram(periodicTable, recs);
           }
-      } while (b != 5);
+      } while (option != 5);
       quitProg();
    }
    
@@ -158,7 +158,7 @@ public class program3 {
                         " like to display: ");
       choice = console.next();
       for (int i = 0; i < recs; i++) {
-         if (periodicTable[i].elementName.equals(choice)) {
+         if (periodicTable[i].elementName.equals(choice) && !foundIt) {
             foundIt = true;
             System.out.println();
             System.out.printf("%-15s", elem);
@@ -190,13 +190,6 @@ public class program3 {
       System.out.print("Enter the lower bound for your range of atomic numbers: ");
       lower = console.nextInt();
       System.out.println();
-      while (lower <= 0) {
-         System.out.println("There are no records at " + lower);
-         System.out.print("Please enter a number higher than or equal to 1" +
-                          " for your lower bound: ");
-         lower = console.nextInt();
-         System.out.println();
-      }
       System.out.print("Enter the upper bound for your range of atomic numbers: ");
       upper = console.nextInt();
       System.out.println();
@@ -205,13 +198,6 @@ public class program3 {
          upper = lower;
          lower = temp;
       }
-      while (upper > recs) {
-         System.out.println("There are no records at " + upper);
-         System.out.print("Please enter a number lower than or equal to " + recs +
-                            " for your upper bound: ");
-         upper = console.nextInt();
-         System.out.println();
-      }
       for (int i = 0; i < recs; i++) {
          if (periodicTable[i].elementNum >= lower &&
              periodicTable[i].elementNum <= upper) {
@@ -219,23 +205,28 @@ public class program3 {
            count++;
          }
       }
-      avg = sum / count;
-      System.out.printf("Average molecular weight for chemicals within range: " +
-                        " %4.3f \n", avg);
+      if (sum == 0) {
+          System.out.println("There are no records in this range");
+      } else {
+          avg = sum / count;
+          System.out.printf("Average molecular weight for chemicals within range: " +
+                  " %4.3f \n", avg);
+      }
       System.out.println();
    }
 
    //Displays histogram of records from data file in
    //ten ranges
    public static void displayHistogram(Elements[] periodicTable, int recs) {
-      String dec = "decade";
-      String count = "count";
-      int decNum = decadeWidth(periodicTable, recs);
+      String dec = "decade (Element mass)";
+      String count = "count (# of elements in decade)";
+      double min = computeMin(periodicTable, recs);
+      int decNum = decadeWidth(periodicTable, recs, min);
       int decNumStart = decNum - 1;
-      int[] decArray = fillDecadeArray(periodicTable, recs);
-      System.out.printf("%6s  :" + "%6s \n", dec, count);
+      int[] decArray = fillDecadeArray(periodicTable, recs, min);
+      System.out.printf("%6s:" + "       %6s \n", dec, count);
       for (int i = 0; i < 10; i++) {
-          System.out.printf("%6d" + "%9d" + " ", decNumStart, decArray[i]);
+          System.out.printf("\t\t\t    %6d" + "%9d" + " ", decNumStart, decArray[i]);
           printStars(decArray[i]);
           System.out.println();
           decNumStart += decNum;
@@ -245,9 +236,8 @@ public class program3 {
 
    //Fills the array that will hold the decade counts
    //for each decade
-   public static int[] fillDecadeArray(Elements[] periodicTable, int recs) {
-      double min = computeMin(periodicTable, recs);
-      int decWidth = decadeWidth(periodicTable, recs);
+   public static int[] fillDecadeArray(Elements[] periodicTable, int recs, double min) {
+      int decWidth = decadeWidth(periodicTable, recs, min);
       int result = 0;
       int[] decadeArray = new int[10];
       for (int i = 0; i < recs; i++) {
@@ -258,8 +248,7 @@ public class program3 {
    }
 
    //Computes decade width
-   public static int decadeWidth (Elements[] periodicTable, int recs) {
-      double min = computeMin(periodicTable, recs)   ;
+   public static int decadeWidth (Elements[] periodicTable, int recs, double min) {
       double max = computeMax(periodicTable, recs);
       double range = max - min;
       int decadeWid = (int) Math.ceil(range / 10);
