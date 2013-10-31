@@ -222,11 +222,11 @@ public class program3 {
       String count = "count (# of elements in decade)";
       double min = computeMin(periodicTable, recs);
       int decNum = decadeWidth(periodicTable, recs, min);
-      int decNumStart = decNum - 1;
+      double decNumStart = min;
       int[] decArray = fillDecadeArray(periodicTable, recs, min);
       System.out.printf("%6s:" + "       %6s \n", dec, count);
       for (int i = 0; i < 10; i++) {
-          System.out.printf("\t\t\t    %6d" + "%9d" + " ", decNumStart, decArray[i]);
+          System.out.printf("\t\t\t    %7.3f" + "%9d" + " ", decNumStart, decArray[i]);
           printStars(decArray[i]);
           System.out.println();
           decNumStart += decNum;
